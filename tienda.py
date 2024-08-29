@@ -66,7 +66,7 @@ class Tienda(ABC):
 
     @property
     def nombre(self):
-         """
+        """
         Obtiene el nombre de la tienda.
 
         Returns:
