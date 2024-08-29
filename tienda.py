@@ -161,8 +161,17 @@ class Supermercado(Tienda):
 
 
 class Farmacia(Tienda):
-  
+    """
+    Clase que representa una farmacia, hereda de Tienda.
+    """ 
     def listar_productos(self):
+        """
+        Lista todos los productos disponibles en la farmacia.
+
+        Returns:
+            str: Una cadena con la lista de productos y sus precios, indicando si tienen envío gratis.
+        """
+        
         listado = []
         for p in self.productos:
             if p.precio > 15000:
@@ -172,6 +181,16 @@ class Farmacia(Tienda):
         return "\n".join(listado)
 
     def realizar_venta(self, nombre_producto, cantidad):
+        """
+        Realiza la venta de un producto en la farmacia, con restricciones en la cantidad.
+
+        Args:
+            nombre_producto (str): El nombre del producto a vender.
+            cantidad (int): La cantidad del producto a vender.
+
+        Raises:
+            ValueError: Si se intenta vender más de 3 productos a la vez.
+        """
         if cantidad > 3:
             print("No se pueden vender más de 3 productos a la vez")
             
