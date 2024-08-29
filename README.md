@@ -1,6 +1,8 @@
+# Emprendimiento de app movil de compra y reparto de productos.
+# Interacciones entre objetos en Python
 
 ## Descripción
-Este proyecto permite gestionar diferentes tipos de tiendas (Restaurante, Supermercado y Farmacia) mediante una interfaz de línea de comandos. A continuación, se describe brevemente la funcionalidad principal para cada uno de los siguientes archivos:
+Este proyecto de emprendimiento se solicita una aplicación móvil de compra y reparto de productos, como encargados de backend se realiza el proyecto que permite gestionar diferentes tipos de tiendas (Restaurante, Supermercado y Farmacia) mediante una interfaz de línea de comandos. A continuación, se describe brevemente la funcionalidad principal para cada uno de los siguientes archivos:
 
 ## 01- producto.py
 Define la clase Producto que representa un producto con nombre, precio y stock. Incluye métodos para:
