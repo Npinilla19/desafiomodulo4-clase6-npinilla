@@ -1,6 +1,17 @@
 from tienda import Restaurante, Supermercado, Farmacia
 
 def crear_tienda():
+    """
+    Crea una instancia de una tienda basada en el tipo especificado por el usuario.
+
+    Solicita al usuario el nombre de la tienda, el costo de delivery y el tipo de tienda 
+    (restaurante, supermercado, farmacia). Luego, crea y retorna una instancia de la tienda 
+    correspondiente.
+
+    Returns:
+        Restaurante, Supermercado, Farmacia o None: Una instancia de la tienda correspondiente 
+        o None si el tipo de tienda no es válido.
+    """
     nombre = input("Ingrese el nombre de la tienda: ")
     costo_delivery = float(input("Ingrese el costo de delivery: "))
     tipo = input("Ingrese el tipo de tienda (restaurante, supermercado, farmacia): ").lower()
@@ -16,6 +27,12 @@ def crear_tienda():
         return None
 
 def main():
+    """
+    Función principal que maneja la interacción con el usuario para gestionar una tienda.
+
+    Permite al usuario crear una tienda y luego realizar varias operaciones como ingresar 
+    productos, listar productos, realizar ventas y salir del programa.
+    """
     tienda = crear_tienda()
     if tienda:
         while True:
